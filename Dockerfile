@@ -1,5 +1,5 @@
 FROM node:gallium-alpine
-LABEL maintainer "Tim Brust <tim.brust@sinnerschrader.com>"
+LABEL maintainer "Charlie Edwards <cjewvuit@gmail.com>"
 
 ARG REFRESHED_AT
 ENV REFRESHED_AT $REFRESHED_AT
@@ -22,3 +22,7 @@ RUN echo @edge https://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/
     wayland-libs-cursor@edge \
     wayland-libs-egl@edge \
     wayland@edge
+
+RUN adduser -D foo
+USER foo
+
