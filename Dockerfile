@@ -14,4 +14,11 @@ RUN echo @edge https://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/
     ttf-freefont@edge \
     nss@edge \
     libstdc++@edge \
-    sqlite-libs@edge
+    sqlite-libs@edge \
+    chromium@edge \
+    harfbuzz@edge \
+    wayland-libs-client@edge \
+    wayland-libs-server@edge \
+    wayland-libs-cursor@edge \
+    wayland-libs-egl@edge \
+    wayland@edge
